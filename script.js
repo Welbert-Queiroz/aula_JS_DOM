@@ -21,4 +21,19 @@ const arrayPostagens = [
 ]
 // Criar um elemento
 
+let article = document.createElement("article")
+
+
 // Manipular o elelmento
+
+article.innerHTML = `
+<h3>Pop Vegan</h3>
+<p class="subtitulo">Comida veganda para todos!</p>
+<div class="data">06/07/2022</div>
+<p>Restaurante em Consolação com comida por kilo no almoço e rodízio de pizzas à noite, tudo 100% vegando. Vale muita a pena conhecer :)</p>
+`
+// Adicionar elementos
+
+let main = document.querySelector("main")
+main.appendChild(article)
+
